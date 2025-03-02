@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-#include<bits/stdc++.h>
-using namespace std;
 
 char grid[1005][1005];
 bool vis[1005][1005];
@@ -18,9 +16,8 @@ bool valid(int i, int j)
 bool dfs(int sr,int sc)
 {
     if(sr == Di && sc == Dj)
-    {
         return true;
-    }
+
     vis[sr][sc] = true;
 
     for(int i = 0; i < 4 ; i++)
